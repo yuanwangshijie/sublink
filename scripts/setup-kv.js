@@ -5,9 +5,9 @@ const fs = require('fs');
 const path = require('path');
 
 const KV_NAMESPACE = 'SUBLINK_KV';
-const WORKER_NAME = 'sublink-worker'
-const KV_NAMESPACE_NAME = `${WORKER_NAME}-${KV_NAMESPACE}`;
-const LEGACY_KV_NAMESPACE_NAME = `${WORKER_NAME}-${WORKER_NAME}-${KV_NAMESPACE}`;  // 历史遗留的命名空间名称
+const WORKER_NAME = 'sublink'
+const KV_NAMESPACE_NAME = `${WORKER_NAME}`;
+const LEGACY_KV_NAMESPACE_NAME = `${WORKER_NAME}`;  // 历史遗留的命名空间名称
 const WRANGLER_CONFIG_PATH = path.join(__dirname, '..', 'wrangler.toml');
 
 // 执行wrangler命令并返回结果
